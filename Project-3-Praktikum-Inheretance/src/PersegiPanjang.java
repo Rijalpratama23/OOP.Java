@@ -8,13 +8,12 @@ public class PersegiPanjang extends BangunDatar {
         this.lebar = lebar;
     }
 
-    @Override
-    public double hitungLuas() {
+    public double HitungLuas() {
         return panjang * lebar;  // Menghitung luas persegi panjang
     }
 
-    @Override
-    public double hitungKeliling() {
+
+    public double HitungKeliling() {
         return 2 * (panjang + lebar);  // Menghitung keliling persegi panjang
     }
 }

@@ -6,13 +6,13 @@ public class BujurSangkar extends BangunDatar {
         this.sisi = sisi;
     }
 
-    @Override
-    public double hitungLuas() { 
+    
+    public double HitungLuas() { 
         return sisi * sisi;  // Menghitung luas bujur sangkar
     }
 
-    @Override
-    public double hitungKeliling() {
+    
+    public double HitungKeliling() {
         return 4 * sisi;  // Menghitung keliling bujur sangkar
     }
 }
