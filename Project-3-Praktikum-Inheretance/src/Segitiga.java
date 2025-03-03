@@ -10,13 +10,13 @@ public class Segitiga extends BangunDatar {
         this.sisiC = sisiC;
     }
 
-    @Override
-    public double hitungLuas() {
+    
+    public double HitungLuas() {
         return 0.5 * alas * tinggi;  // Menghitung luas segitiga
     }
 
-    @Override
-    public double hitungKeliling() {
+    
+    public double HitungKeliling() {
         return sisiA + sisiB + sisiC;  // Menghitung keliling segitiga
     }
 }
