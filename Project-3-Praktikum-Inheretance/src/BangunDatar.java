@@ -10,10 +10,10 @@ public class BangunDatar {
     }
 
     public double hitungLuas() {
-        return 0; // Default, akan di-override di subclass
+        return 0; // nilai default
     }
 
     public double hitungKeliling() {
-        return 0; // Default, akan di-override di subclass
+        return 0; // nilai default
     }
 }

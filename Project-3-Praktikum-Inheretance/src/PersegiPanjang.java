@@ -9,11 +9,11 @@ public class PersegiPanjang extends BangunDatar {
     }
 
     public double HitungLuas() {
-        return panjang * lebar;  // Menghitung luas persegi panjang
+        return panjang * lebar;  // hitung luas segi pnjang
     }
 
 
     public double HitungKeliling() {
-        return 2 * (panjang + lebar);  // Menghitung keliling persegi panjang
+        return 2 * (panjang + lebar);  // hitung keliling persegi panjang
     }
 }

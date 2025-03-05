@@ -8,11 +8,11 @@ public class BujurSangkar extends BangunDatar {
 
     
     public double HitungLuas() { 
-        return sisi * sisi;  // Menghitung luas bujur sangkar
+        return sisi * sisi;  // hitung luas bujur sangkar
     }
 
     
     public double HitungKeliling() {
-        return 4 * sisi;  // Menghitung keliling bujur sangkar
+        return 4 * sisi;  // hitung bujur sangkar
     }
 }

@@ -12,11 +12,11 @@ public class Segitiga extends BangunDatar {
 
     
     public double HitungLuas() {
-        return 0.5 * alas * tinggi;  // Menghitung luas segitiga
+        return 0.5 * alas * tinggi;  // hitung luas segi tiga
     }
 
     
     public double HitungKeliling() {
-        return sisiA + sisiB + sisiC;  // Menghitung keliling segitiga
+        return sisiA + sisiB + sisiC;  // hitung luas keliling
     }
 }
