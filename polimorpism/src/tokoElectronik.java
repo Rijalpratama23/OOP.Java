@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class tokoElectronik{
     public static void main(String[] args) {
-        Electronic elc = new Electronic("iphone", 200.000, 10);
+        Electronic elc = new Electronic("iphone",20000,30);
         Clothing clot = new Clothing(null, 0, 0, null);
         Food food = new Food(null, 0, null);
 
@@ -16,12 +16,12 @@ public class tokoElectronik{
         int pilihan = sc.nextInt();
 
         if (pilihan == 1) {
-            System.out.println("Merk :");
+            System.out.println("Merk");
             String name = sc.nextLine();
-            elc.setName(name);
+            // elc.setName(name);
             elc.infoProduct();
         }else if (pilihan == 2) {
-
+            System.out.println("");
         }else if(pilihan == 3) {
 
         }else {
