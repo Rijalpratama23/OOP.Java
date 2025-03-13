@@ -1,50 +1,82 @@
 public class Rekening {
     String namaPemilik;
-    String nomorRekening;
-    double saldo;
-    double jumlah;
+    String noRekening;
+    Double saldo;
+    Double jumlah;
+    double sisa;
 
-    public Rekening(String namaPemilik, String nomorRekening, double saldo) {
+    public Rekening(String namaPemilik, String noRekening, Double saldo) {
         this.namaPemilik = namaPemilik;
-        this.nomorRekening = nomorRekening;
+        this.noRekening = noRekening;
         this.saldo = saldo;
     }
 
-    public Rekening(String nama_pemilik, double saldo ){
-        namaPemilik = nama_pemilik;
+    public Rekening(Double saldo, Double jumlah, Double sisa) {
         this.saldo = saldo;
+        this.jumlah = jumlah;
+        this.sisa = this.saldo - this.jumlah;
     }
 
-
-    // get
-    public String getNamaPemilik() {
-        return namaPemilik;
-    }
-    public String getNomorRekening() {
-        return nomorRekening;
-    }
-    public double getSaldo() {
-        return saldo;
-    }
-
-    
-    public double Setor(double jumlah, double saldo) {
+    public double Setor(Double saldo, Double jumlah){
         this.saldo = this.saldo + this.jumlah;
         return this.saldo;
     }
-    public void Tarik(double jumlah) {
-        if(jumlah >= saldo) {
-            System.out.println('saldo tidak mencukupi');
-        }else {
-            
-        }
-        this.saldo - this.jumlah
 
+    public double Tarik(Double saldo, Double jumlah, Double sisa){
+        if(this.jumlah >= this.saldo){
+            System.out.println("Saldo tidak mencukupi");
+        }
+        else{
+        }
+        this.sisa = this.saldo - this.jumlah;
+        return this.sisa;
     }
-    public void tampilkanInfo(double jumlah) {
-        System.out.println('Nama Pemilik :' + getNamaPemilik());
-        System.out.println('Nomor Rekening :' + getNomorRekening());
-        System.out.println('Saldo :' + getSaldo());
+
+    public Double getSaldo(){
+        return saldo;
     }
-        
+
+    public Double getJumlah(){
+            // Lakukan penarikan
+            this.saldo = this.saldo - this.jumlah;
+            // Hitung sisa saldo
+            this.saldo = this.sisa;
+        return jumlah;
+    }
+
+    public String getNamaPemilik(){
+        return namaPemilik;
+    }
+    
+
+    public String getNoRekening(){
+        return noRekening;
+    }
+
+    public void setSaldo(Double saldo){
+        this.saldo = saldo;
+    }
+
+    public void setSisa(Double sisa){
+        this.sisa = sisa;
+    }
+
+    public void setJumlah(Double jumlah){
+        this.jumlah = jumlah;
+    }
+
+    public void setNamaPemilik(String namaPemilik){
+        this.namaPemilik = namaPemilik;
+    }
+
+    public void setNoRekening(String noRekening){
+        this.noRekening = noRekening;
+    }
+
+    public void infoRekening(){
+        System.out.println("Nama Pemilik: " + this.namaPemilik);
+        System.out.println("No Rekening: " + this.noRekening);
+        System.out.println("Saldo: " + this.saldo);
+    }   
+
 }
