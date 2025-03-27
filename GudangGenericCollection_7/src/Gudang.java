@@ -35,8 +35,9 @@ public class Gudang <T> {
             System.out.println("kode barang tidak di temukan!");
         }
     }
+    
 
-    public void infoItem() {
+    public void printItem() {
         for(Item<T> item: barang.values()) {
             item.infoItem();
         }
