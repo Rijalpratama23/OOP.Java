@@ -10,7 +10,7 @@ public class Main {
         System.out.println("2. MacBook");
         System.out.print("Masukkan pilihan: ");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Membuang newline
+        scanner.nextLine(); 
 
         if (choice == 1) {
             laptop = new Toshiba();
