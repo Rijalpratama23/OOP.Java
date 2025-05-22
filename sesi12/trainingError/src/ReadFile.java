@@ -18,5 +18,8 @@ public class ReadFile {
         catch (IOException e) {
             System.out.println(e.getMessage());
         }
+        finally{
+            System.out.println("isikan sesuatu");
+        }
     }
 }
